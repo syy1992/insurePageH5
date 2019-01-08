@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'tjnfont';  
+  src: url('fonts/icomoon.ttf?vmwu9d') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tjnfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tip:before {
+  content: "\e914";
+  color: #ffa810;
+}
+.icon-checked:before {
+  content: "\e915";
+}
+.icon-qustion:before {
+  content: "\e916";
+  color: #4080e8;
+}
+.icon-accept:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-checking:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-refuse:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-delete:before {
+  content: "\e90b";
+  color: #666;
+}
+.icon-success:before {
+  content: "\e907";
+  color: #4583e9;
+}
+.icon-default-address:before {
+  content: "\e906";
+  color: #fa5d5d;
+}
+.icon-edit:before {
+  content: "\e905";
+  color: #979797;
+}
+.icon-kb-delete:before {
+  content: "\e904";
+}
+.icon-exclamation:before {
+  content: "\e90e";
+  color: #999;
+}
+.icon-add-circled:before {
+  content: "\e908";
+}
+.icon-sort-active .path1:before {
+  content: "\e900";
+  color: rgb(200, 199, 204);
+}
+.icon-sort-active .path2:before {
+  content: "\e901";
+  margin-left: -0.63671875em;
+  color: rgb(64, 128, 232);
+}
+.icon-sort:before {
+  content: "\e902";
+  color: #c8c7cc;
+}
+.icon-phone:before {
+  content: "\e903";
+  color: #4080e8;
+}
+.icon-equal:before {
+  content: "\e909";
+  color: #999;
+}
+.icon-add:before {
+  content: "\e90a";
+  color: #666;
+}
+.icon-multiply:before {
+  content: "\e90c";
+  color: #c8c7cc;
+}
+.icon-check:before {
+  content: "\e90d";
+  color: #fa5d5d;
+}
+.icon-close:before {
+  content: "\e90f";
+  color: #999;
+}
+.icon-arrow-right:before {
+  content: "\e911";
+  color: #c8c7cc;
+}

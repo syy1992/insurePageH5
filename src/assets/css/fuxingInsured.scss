@@ -1,0 +1,481 @@
+@function r($px){
+  @return $px /2/18.75 * 1rem;
+}
+$OperatorHeight:3rem;
+$BaseColor: #232323;
+$orangeColor: #FC9020;
+$halfBlackColor: #8c8c8c;
+$inputColor: #666666;
+$BaseFontSize: 0.95rem;
+$BaseLineHeight: 1.9rem;
+$otherFontSize: 0.8rem;
+$buttonFontSize: 1rem;
+
+#applicant .weui-cells_radio .weui-check:checked + .weui-icon-checked:before{
+  color: $orangeColor;
+
+}
+#applicant .vux-check-icon > .weui-icon-success:before, .vux-check-icon > .weui-icon-success-circle:before{
+  color: $orangeColor;
+}
+
+#applicant {
+  color: $BaseColor;
+  .vux-selector-readonly{color: $inputColor;text-align: left;}
+  .weui-cell_select {.weui-select{color:$inputColor;line-height: 50px;height: 50px;}}
+  .vux-cell-align-left{color:$inputColor }
+  .weui-btn_mini{padding: 0 0.5rem;}
+  .vux-check-icon{
+    span{font-size:$otherFontSize }
+  }
+  .clause_confirm {
+    margin-bottom: $OperatorHeight;
+    padding: 15px;
+    font-size: $otherFontSize;
+    line-height: 20px;
+    .a_link {
+      color: #68a6f5;
+      font-size: 0.82rem
+    }
+    .t-source {
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+      color: $halfBlackColor;
+    }
+  }
+  .weui-btn + .weui-btn{margin-top: 0}
+  .plan-info{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    .plan-info-lable{color: #959595;font-size: 0.7rem}
+    .plan-info-content{
+      line-height: 1.5rem;
+      span{color:$BaseColor;margin-right: 0.5rem;}
+      font-size: 0.95rem;
+    }
+  }
+  /*  .weui-label{color:$BaseColor;}*/
+  .vux-cell-placeholder{color: #c6c6cc;}
+  .oprations {
+    position: fixed;
+    height: $OperatorHeight;
+    bottom: 0;
+    border-top: 1px solid #e6e6e6;
+    background: #fff;
+    z-index: 10;
+    div {
+      font: normal $buttonFontSize normal;
+      color:#fff;
+      height: $OperatorHeight;
+      line-height: $OperatorHeight;
+      text-align: center;
+    }
+    .plan-price {
+      background-color: #FFF;
+      color: $orangeColor;
+      line-height: $OperatorHeight;
+    }
+    .plan-share {
+      background-color: #ffb938;
+      letter-spacing: 0.01rem;
+    }
+    .plan-buy {
+      background-color: $orangeColor;
+      letter-spacing: 0.01rem;
+    }
+    .plan-desc {
+      /*background-color: #fff;*/
+      color: $BaseColor;
+      letter-spacing: 0.01rem;
+    }
+  }
+  .weui-btn_primary{background-color: $orangeColor}
+  .weui-icon-circle{ font-size: $otherFontSize;margin-top: -3px;}
+  .weui-icon-success{font-size: $otherFontSize;margin-top: -3px;}
+  .weui-input{ font-size: $BaseFontSize;  color: $inputColor;}
+  .vux-cell-value {
+    color: $inputColor;
+    font-size: $BaseFontSize;
+  }
+
+  .insuredInfo {
+    .weui-cells{
+      &:first-child{
+        &:before{display: none}
+      }
+    }
+
+    position: relative;
+    &:after{
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1px;
+      border-top: 1px solid #D9D9D9;
+      color: #D9D9D9;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      left: 15px;
+    }
+  }
+  .weui-cells{
+    font-size: $BaseFontSize;
+    &:after{display: none}
+    &:before{display: none}
+    .weui-icon-warn{font-size: 16px;}
+    .vux-input-icon.vux-input-icon{
+      &:before{
+        font-size:16px;
+      }
+    }
+  }
+  .remove-line{position: relative;
+    &:after{content: " ";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      right: 0;
+      height: 1px;
+      border-top: 1px solid #D9D9D9;
+      color: #D9D9D9;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+    #profession{
+      .weui-cell_select {
+        .weui-cell__bd{
+          &:after {
+            content: " ";
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-width: 2px 2px 0 0;
+            border-color: #C8C8CD;
+            border-style: solid;
+            -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: absolute;
+            top: 50%;
+            right: 3px;
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+  }
+  .weui-label{min-width: 105px;line-height: $BaseLineHeight}
+  .vux-label{line-height: 1.9rem;}
+  .vux-datetime{
+    div{
+      p{width: 105px;line-height: 1.9rem;}
+    }
+  }
+  .weui-cell_access{
+    .weui-cell__ft{text-align: left;}
+  }
+  .default-width {
+    .vux-cell-bd {
+      p {
+        width: 105px;
+      }
+    }
+  }
+
+}
+.vux-x-dialog{.weui-dialog__btn{color:$orangeColor}}
+
+.weui-toast_text{
+  .weui-toast__content{font-size:$otherFontSize;padding: 10px; }
+}
+.v-transfer-dom{
+  .vux-popup-header-right{
+    color:$orangeColor;
+  }
+}
+.dp-container {
+  .dp-header {
+    .dp-item.dp-right {
+      color: $orangeColor
+    }
+  }
+}
+.divstyle{
+  font-size: 0.7rem;
+  text-align: left;
+  padding: 5px 15px;
+  line-height: 1.3rem;
+  color: $inputColor;
+  p{line-height:1.3rem;}
+  .pstyle{margin-bottom: 0.3rem;font-size: $BaseFontSize;color: #353535;}
+
+  .weui-cell{
+    .vux-cell-bd{
+      p{
+        .vux-label{font-size:0.8rem;text-align: justify;}
+      }
+    }
+  }
+}
+.vux-popup-dialog{
+  .weui-cells{margin-top: 30px}
+  .close{text-align: right;}
+}
+.close{
+  position: absolute;
+  /*right: 15px;*/
+  width: 100%;
+  top: 0;
+  font-size: 20px;
+  height: 30px;
+  background: #ccc;
+  text-align: center;
+  z-index: 1000;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.clause{
+  .weui-cell{background: #efefef;margin-top: 0.5rem;&:before{display: none;}}
+}
+.position-horizontal-demo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  .pop-top {
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    color: #333333;
+    .left {
+      width: 44px;
+      height: 45px;
+      position: relative;
+      color: #999;
+      .back {
+        display: block;
+        .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 16px;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    }
+    .center {
+      flex: 1;
+      height: 45px;
+      line-height: 45px;
+      position: relative;
+      text-align: center;
+      font-size: 1rem;
+      color: #333333;
+    }
+    .right {
+      /*box-flex: 1;*/
+      width: 44px;
+      height: 44px;
+      position: relative;
+      .v-close {
+        display: block;
+        .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 16px;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    }
+  }
+  .text {
+    background: #F8F8F8;
+    height: auto;
+    -webkit-transition: all .3s;
+    position: relative;
+    padding: 0 17px;
+    word-wrap: break-word;
+    color: #333;
+    font-size: 1rem;
+    .selected {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 17px 0;
+    }
+    .pass {
+      color: #51A93D;
+      margin-top: -14px;
+      padding-bottom: 12px;
+      background: #f8f8f8;
+      font-size: 0.8rem;
+    }
+    .pass-error {
+      color: #E12224;
+    }
+  }
+  .animated {
+    -webkit-animation-duration: .4s;
+    -moz-transition-duration: .4s;
+  }
+  .actived {
+    transition-delay: .5s;
+    opacity: 1;
+  }
+  .content {
+    /*-webkit-flex: 1;*/
+    width: 100%;
+    height: 90%;
+    /*left: 0;*/
+    /*padding-left: 15px;*/
+    position: relative;
+    top: 0;
+    transition: .3s all ease;
+    transition-delay: 0s;
+    /*opacity: 0;*/
+    ul {
+      height: 80%;
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: .3s all ease;
+      background: #fff;
+      overflow-y: scroll;
+      /*overflow-x: hidden;*/
+      -webkit-overflow-scrolling: touch;
+      /*-webkit-transform: translateX(0px);*/
+      /*width: 100%;*/
+      padding-left: 15px;
+      box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);
+      padding-bottom: 3rem;
+      li {
+        padding: 13px 0;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        padding-right: 23px;
+        background: #fff;
+        font-size: 1rem;
+        color: #333;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          height: 1px;
+          display: block;
+          background-color: #ddd;
+          -webkit-transform: scale(1, 0.5);
+          -ms-transform: scale(1, 0.5);
+          transform: scale(1, 0.5);
+          /*-webkit-transform-origin: center bottom;*/
+          /*-ms-transform-origin: center bottom;*/
+          /*transform-origin: center bottom;*/
+          z-index: 1;
+        }
+        &:after {
+          display: block;
+          content: '';
+          width: 16px;
+          height: 16px;
+          background: url(https://res.winbaoxian.com/legacy/gexian/img/arrow@2x.png) 0 0 no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: 5px;
+          top: 14px;
+        }
+        .c-open-list-item {
+          color: #333;
+          font-size: 1rem;
+        }
+      }
+      .no-child {
+        :after {
+          background: none;
+        }
+      }
+    }
+  }
+  .delay {
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+  }
+}
+#pay{
+  -webkit-transition: left  0.3s ease;
+  transition: left 0.3s ease;
+  .footer{
+    line-height: 50px;
+    width: 100%;
+    color: #fff;
+    background: $orangeColor;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left:0;
+  }
+  .weui-cells{&:after{
+    content: " ";
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }}
+  .weui-cell__ft{color: $inputColor;font-size: $BaseFontSize;}
+  .weui-cells_radio {
+    .weui-check:checked + .weui-icon-checked:before {
+      color: $orangeColor;
+    }
+  }
+  .vux-label{line-height: 1.9rem;font-size:$BaseFontSize;}
+  .vux-popup-header-right{color: #666666}
+  .vux-popup-dialog{overflow-x: hidden;}
+  .pay {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .bankCard {
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10000;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    .vux-radio-label{font-size: $BaseFontSize;}
+  }
+  .fadein {
+    left: 0;
+  }
+  .fadeout {
+    left: 100%;
+  }
+
+}
